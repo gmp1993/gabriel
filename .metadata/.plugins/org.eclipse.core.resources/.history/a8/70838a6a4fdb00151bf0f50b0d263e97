@@ -1,0 +1,14 @@
+<?php
+print "Programa para ler dois números reais: ";
+
+print "Digite o valor do primeiro número: ";
+$x1 = trim(fgets(STDIN));
+print "Digite o valor do segundo número: ";
+$x2 = trim(fgets(STDIN));
+
+if ($x1 < x2) {
+	print "x2 é maior do que x1";
+}
+else {
+	print "x1 é maior do que x2";
+}

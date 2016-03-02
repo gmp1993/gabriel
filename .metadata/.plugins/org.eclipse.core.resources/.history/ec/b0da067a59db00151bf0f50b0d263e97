@@ -1,0 +1,11 @@
+<?php
+print "Programa para ler os coeficientes de uma equação";
+
+print "Digite o valor do coeficiente 'a': ";
+$a = trim(fgets(STDIN));
+print "Digite o valor do coeficiente 'b': ";
+$b = trim(fgets(STDIN));
+print "Digite o valor do coeficiente 'c': ";
+$c = trim(fgets(STDIN));
+
+$delta = pow($b, 2) - 4*$a*$c
