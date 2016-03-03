@@ -37,7 +37,7 @@ $totalreal = $total + $garcom;
 
 print "\nValor da conta: ";
 
-print "\nR$ " . $entrada . " (valor básico)";
+print "\nR$ " . $entrada . "(valor básico)";
 
 print "\nR$ " . $comida . " (bebida e comida)";
 
@@ -48,7 +48,7 @@ else {
 	print "\nValor pago aos cantores: R$0.00";
 }
 
-print "\nR$ " . $total . " (subtotal sem 10%)";
+print "\nR$ " . $total . "(subtotal sem 10%)";
 
 print "\n--------------------------------------";
 

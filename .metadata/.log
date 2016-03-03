@@ -695,3 +695,53 @@ org.eclipse.dltk.core.ModelException: Cannot create linked resource '/.org.eclip
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
 !SUBENTRY 1 org.eclipse.core.resources 4 77 2016-03-02 19:53:27.905
 !MESSAGE Cannot create linked resource '/.org.eclipse.dltk.core.external.folders/.link1'.  The parent resource is not accessible.
+
+!ENTRY org.eclipse.php.ui 4 10001 2016-03-02 20:30:15.133
+!MESSAGE PHP ui plugin internal error
+!STACK 1
+org.eclipse.dltk.core.ModelException: $c [in item1.php [in <default> [in <project root> [in Trabalho01]]]] does not exist
+	at org.eclipse.dltk.internal.core.ModelElement.newNotPresentException(ModelElement.java:270)
+	at org.eclipse.dltk.internal.core.ModelElement.openWhenClosed(ModelElement.java:208)
+	at org.eclipse.dltk.internal.core.ModelElement.getElementInfo(ModelElement.java:183)
+	at org.eclipse.dltk.internal.core.ModelElement.getElementInfo(ModelElement.java:165)
+	at org.eclipse.dltk.internal.core.Member.getFlags(Member.java:50)
+	at org.eclipse.php.internal.ui.documentation.PHPDocumentationProvider.isFinal(PHPDocumentationProvider.java:276)
+	at org.eclipse.php.internal.ui.documentation.PHPDocumentationProvider.getConstantValue(PHPDocumentationProvider.java:235)
+	at org.eclipse.php.internal.ui.documentation.PHPDocumentationProvider.getInfo(PHPDocumentationProvider.java:96)
+	at org.eclipse.dltk.ui.documentation.ScriptDocumentationAccess$2.getInfo(ScriptDocumentationAccess.java:158)
+	at org.eclipse.dltk.ui.documentation.ScriptDocumentationAccess.merge(ScriptDocumentationAccess.java:88)
+	at org.eclipse.dltk.ui.documentation.ScriptDocumentationAccess.getHTMLContentReader(ScriptDocumentationAccess.java:150)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.getHTMLContentReader(ProposalInfo.java:183)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.extractScriptdoc(ProposalInfo.java:154)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.computeInfo(ProposalInfo.java:94)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.getInfo(ProposalInfo.java:71)
+	at org.eclipse.dltk.ui.text.completion.AbstractScriptCompletionProposal.getAdditionalProposalInfo(AbstractScriptCompletionProposal.java:489)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.dltk.core 4 969 2016-03-02 20:30:15.133
+!MESSAGE $c [in item1.php [in <default> [in <project root> [in Trabalho01]]]] does not exist
+
+!ENTRY org.eclipse.php.ui 4 10001 2016-03-02 20:56:53.026
+!MESSAGE PHP ui plugin internal error
+!STACK 1
+org.eclipse.dltk.core.ModelException: $totalreal [in item1.php [in <default> [in <project root> [in Trabalho01]]]] does not exist
+	at org.eclipse.dltk.internal.core.ModelElement.newNotPresentException(ModelElement.java:270)
+	at org.eclipse.dltk.internal.core.ModelElement.openWhenClosed(ModelElement.java:208)
+	at org.eclipse.dltk.internal.core.ModelElement.getElementInfo(ModelElement.java:183)
+	at org.eclipse.dltk.internal.core.ModelElement.getElementInfo(ModelElement.java:165)
+	at org.eclipse.dltk.internal.core.Member.getFlags(Member.java:50)
+	at org.eclipse.php.internal.ui.documentation.PHPDocumentationProvider.isFinal(PHPDocumentationProvider.java:276)
+	at org.eclipse.php.internal.ui.documentation.PHPDocumentationProvider.getConstantValue(PHPDocumentationProvider.java:235)
+	at org.eclipse.php.internal.ui.documentation.PHPDocumentationProvider.getInfo(PHPDocumentationProvider.java:96)
+	at org.eclipse.dltk.ui.documentation.ScriptDocumentationAccess$2.getInfo(ScriptDocumentationAccess.java:158)
+	at org.eclipse.dltk.ui.documentation.ScriptDocumentationAccess.merge(ScriptDocumentationAccess.java:88)
+	at org.eclipse.dltk.ui.documentation.ScriptDocumentationAccess.getHTMLContentReader(ScriptDocumentationAccess.java:150)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.getHTMLContentReader(ProposalInfo.java:183)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.extractScriptdoc(ProposalInfo.java:154)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.computeInfo(ProposalInfo.java:94)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.getInfo(ProposalInfo.java:71)
+	at org.eclipse.dltk.ui.text.completion.AbstractScriptCompletionProposal.getAdditionalProposalInfo(AbstractScriptCompletionProposal.java:489)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.dltk.core 4 969 2016-03-02 20:56:53.026
+!MESSAGE $totalreal [in item1.php [in <default> [in <project root> [in Trabalho01]]]] does not exist

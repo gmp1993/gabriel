@@ -1,0 +1,50 @@
+<?php
+print "Digite o sexo do cliente (f/m): ";
+$sexo = trim(fgets(STDIN));
+
+if ($sexo == 'f' || $sexo == 'F'){
+	$entrada = 8;
+	print "\nValor da entrada: ". $entrada;
+}
+
+else {
+	$entrada = 10;
+	print "\nValor da entrada: " . $entrada;
+}
+
+print "\nQuantidade de cervejas consumidas: ";
+$qcerva = trim(fgets(STDIN));
+
+$cerva = $qcerva * 2.50;
+
+print "\nQuantidade de refrigerantes consumidos: ";
+$qrefri = trim(fgets(STDIN));
+
+$refri = $qrefri * 2.10;
+
+print "\nQuantidade de espetinhos consumidos: ";
+$qespe = trim(fgets(STDIN));
+
+$espe = $qespe * 4.00;
+
+$comida = $cerva + $refri + $espe;
+
+$garcom = $comida * 10/100;
+
+$total = $comida + $garcom + $entrada;
+
+$totalreal = $comida + $garcom;
+
+print "\nValor total de consumo: " .$comida;
+
+if ($total < 15.00) {
+	print "\nValor pago aos cantores: R$3.00";
+}
+else {
+	print "\nValor pago aos cantores: R$0.00";
+}
+
+print "Subtotal sem os 10%: " .$comida;
+
+print "\nTotal já acrescido dos 10%: " .$total;
+

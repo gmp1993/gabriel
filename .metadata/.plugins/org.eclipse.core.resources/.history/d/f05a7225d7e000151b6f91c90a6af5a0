@@ -3,12 +3,12 @@ print "Qual o sexo do cliente (f/m): ";
 $sexo = trim(fgets(STDIN));
 
 if ($sexo == 'f' || $sexo == 'F'){
-	$entrada = 8.00;
+	$entrada = 8;
 	print "\nValor da entrada: ". $entrada;
 }
 
 else {
-	$entrada = 10.00;
+	$entrada = 10;
 	print "\nValor da entrada: " . $entrada;
 }
 
@@ -35,11 +35,7 @@ $garcom = $total * 10/100;
 
 $totalreal = $total + $garcom;
 
-print "\nValor da conta: ";
-
-print "\nR$ " . $entrada . " (valor básico)";
-
-print "\nR$ " . $comida . " (bebida e comida)";
+print "\nValor da conta: " .$comida;
 
 if ($total < 15.00) {
 	print "\nValor pago aos cantores: R$3.00";
@@ -48,7 +44,7 @@ else {
 	print "\nValor pago aos cantores: R$0.00";
 }
 
-print "\nR$ " . $total . " (subtotal sem 10%)";
+print "\nR$ " . $total . "(subtotal sem 10%)";
 
 print "\n--------------------------------------";
 
