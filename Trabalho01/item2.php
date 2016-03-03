@@ -1,0 +1,77 @@
+<?php
+print "\nTotal de rendimentos bancários: ";
+$renbanc = trim(fgets(STDIN));
+
+print "\nTotal de rendimentos de salários ou serviços: ";
+$rensal = trim(fgets(STDIN));
+
+print "\nTotal de outros rendimentos: ";
+$totaloutrosren = trim(fgets(STDIN));
+
+print "\nServicos médicos pagos: ";
+$sermed = trim(fgets(STDIN));
+
+print "\nServiços educacionais pagos: ";
+$seredu = trim (fgets(STDIN));
+
+$renbancpor = $renbanc * 20 / 100;
+
+print "\nTotal de impostos: ";
+
+print "\nR$ " . $renbancpor . " (sobre rendimentos bancários)";
+
+if ($rensal <= 8000) {
+	print "\nR$ " . $rensal . " (sobre salários serviços)";
+}
+else {
+	if ($rensal > 8000 && $rensal < 24000) {
+		$rensalpor = $rensal * 15 / 100;
+		print "\nR$ " . $rensalpor . " (sobre salários serviços)";
+	}
+    else {
+    	$rensalpor = $rensal * 20 / 100;
+    	print "\nR$ " . $rensalpor . " (sobre salários serviços)";
+    }
+}
+
+$totaloutrosrenpor = $totaloutrosren * 10 / 100;
+
+print "\nR$ " . $totaloutrosrenpor . " (sobre outros rendimentos)";
+
+$totalbancserou = $totaloutrosrenpor + $rensalpor + $renbancpor;
+
+print "\nR$ " . $totalbancserou . " (total)";
+
+print "\n-----------------------------------------------";
+
+$mededupor = $totalbancserou * 30 / 100;
+
+print "\nMáximo a ser abatido: ";
+
+print "\nR$ " . $mededupor;
+
+print "\n-----------------------------------------------";
+
+print "\nTotal de valores possíveis de abater: ";
+
+print "\nR$ " . $sermed . " (serviços médicos)";
+
+print "\nR$ " . $seredu . " (serviços educacionais)";
+
+$sermededu = $sermed + $seredu;
+
+print "\nR$ " . $sermededu . " (total) ";
+
+print "\n------------------------------------------------";
+
+print "\nImposto total: ";
+
+print "\nR$ " . $totalbancserou . " (imposto bruto)";
+
+print "\nR$ " . $mededupor . " (abatimentos)";
+
+$totalmedporbancserou = $totalbancserou - $mededupor;
+
+print "\nR$ " . $totalmedporbancserou . " (total)";
+
+?>
